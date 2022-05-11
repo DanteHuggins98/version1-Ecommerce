@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color:#2a2a2a;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+ }
+ #slider{
+    overflow: hidden;
+  }
+
+  #slider figure{
+    position:relative;
+    margin:0;
+    left:0;
+    animation: 15s slider infinite;
+    width: 500%;
+
+  }
+
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+
+  @keyframes slider{
+    0%{
+      left: 0;
+    }
+    20%{
+      left: 0;
+    }
+    25%{
+      left: -100%;
+    }
+    45%{
+      left: -100%;
+    }
+    50%{
+      left: -200%;
+    }
+    70%{
+      left: -200%;
+    }
+    75%{
+      left: -300%;
+    }
+    95%{
+      left: -300%;
+    }
+    100%{
+      left: -400%;
+    }
+  }
+  .headerImg{
+    min-height: 40px;  
+    max-width: 150px;
+  }
+  .mainheader{
+      background: radial-gradient(#2a2a2a,#000 );
+  }
+  .navBar{
+      display: flex;
+      align-items: center;
+      padding: 25px;
+  }
+  nav{
+      flex: 2;
+      display: inline-block;
+      text-align: right;
+}
+ nav ul{
+     display: inline;
+     list-style: none;
+    }
+ nav li{
+     display: inline;
+     margin-right: 22px;
+ }
+ a{
+     color: #be9e44;
+ } 
+ h2{
+     color: #be9e44;
+ }
+ .container{
+     max-width: 100%;
+     margin: auto;
+     padding-left: 30px;
+     padding-right: 30px;
+ }
+ #row{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+ .col-2{
+     flex-basis: 100%;
+     min-width: 100px;
+     width: 100vw;
+}
+ #col-2 h2{
+     text-align: center;
+     padding: 10px;
+ }
+ #col-2 h1{
+     text-align: center;
+     font-size: 45px;
+     line-height: 50px;
+     margin: 2px 0;
+     background: radial-gradient(#be9e44, #2a2a2a);
+ }
+ #button{
+     display: inline-flex;
+     background: #000;
+     color: #CBB26A;
+     padding: 6px 20px;
+     margin: 30px;
+     border-radius: 15px;
+ }
+ #button:hover{
+     background-color: #be9e44;
+     color: #111111;
+     transition: 2s;
+ }
+ footer{
+    background: radial-gradient(#111111,#be9e44);
+    padding: 9px;
+    margin-bottom: 0px;
+    text-align: center; 
+    margin-top: auto;
+    bottom: 0;
+    position: relative;
+  }
+  footer p{
+      color: #be9e44;
+  }
+ .logo{
+     height: 30px;
+     padding: 5px;
+ }
+ .text{
+     text-align: center;
+ }
+.featProduct{
+    display: grid;
+    text-align: center;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   
+}
+.col-4{
+    display: inline-block;
+    color: #be9e44;
+    flex-basis: 25%;
+    padding: 15px;
+    min-width: 200px;
+    margin-bottom: 45px;
+}
+.col-4 img{
+    width: 75%;
+}
+.text-1{
+    text-align: center;
+}
+.newArrival{
+    display: grid;
+    text-align: center;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.col-5{
+    color: #be9e44;
+    flex-basis: 25%;
+    padding: 15px;
+    min-width: 200px;
+    margin-bottom: 45px;
+}
+.col-5 img{
+    width: 75%;
+}
+.seasonText{
+    text-align: center;
+}
+.seasonal{
+  display: grid;
+    text-align: center;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.col-6{
+    color: #be9e44;
+    flex-basis: 25%;
+    padding: 15px;
+    min-width: 200px;
+    margin-bottom: 45px;
+}
+.col-6 img{
+    width: 75%;
+}
+.accText{
+  text-align: center;
+}
+.accessories{
+  text-align: center;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.jewel{
+  text-align: center;
+}
+.Jewelry{ 
+  text-align: center;
+  padding-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+@media (max-width: 800px) {
+  #slider figure{
+    animation: 0s slider none;
+  }
+.newArrival, .featProduct,.seasonal, .accessories, .Jewelry{
+  display: inline;
+}
+}
