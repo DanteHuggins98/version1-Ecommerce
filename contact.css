@@ -1,18 +1,18 @@
 input[type=text], select, textarea {
     width: 100%; 
-    padding: 12px; 
+    padding: 5px; 
     border: 1px solid #000;
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-top: 6px; 
-    margin-bottom: 16px; 
+    margin-bottom: 1em; 
     resize: vertical; 
   }
    input[type="submit"] {
     background-color: #000;
     color: #be9e44;
     padding: 12px 20px;
-    margin-left: 46%;
+    margin-left: 48%;
     margin-top: 2%;
     border: none;
     border-radius: 4px;
